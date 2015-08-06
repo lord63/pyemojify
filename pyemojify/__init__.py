@@ -11,7 +11,8 @@
     :license: MIT, see LICENSE for more details.
 """
 
-from __future__ import absolute_import, unicode_literals
+
+from pyemojify.emojify import emojify
 
 
 __title__ = "pyemojify"

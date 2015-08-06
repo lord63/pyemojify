@@ -3,12 +3,10 @@
 
 from __future__ import absolute_import
 
-import re
-
 import click
 
 from pyemojify import __version__
-from pyemojify.emoji import emoji_table
+from pyemojify.emojify import emojify
 
 
 @click.command(context_settings={'help_option_names': ('-h', '--help')})
@@ -17,8 +15,5 @@ from pyemojify.emoji import emoji_table
 def cli(text):
     if not text:
         text = click.get_text_stream('stdin').read().strip()
-    emoji_keys = re.findall(r':\w+:', text)
-    for emoji_key in emoji_keys:
-        raw_emoji = emoji_table.get(emoji_key, emoji_key)
-        text = text.replace(emoji_key, raw_emoji)
-    click.echo(text)
+    emoji_text = emojify(text)
+    click.echo(emoji_text)
