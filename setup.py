@@ -2,6 +2,7 @@
 #  -*- coding: utf-8 -*-
 
 from setuptools import setup
+from codecs import open
 
 import pyemojify
 
@@ -10,7 +11,7 @@ try:
     import pypandoc
     long_description = pypandoc.convert('README.md', 'rst')
 except (IOError, ImportError):
-    with open('README.md') as f:
+    with open('README.md', encoding='utf-8') as f:
         long_description = f.read()
 
 
@@ -30,10 +31,7 @@ setup(
         'Operating System :: POSIX :: Linux',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4'
+        'Programming Language :: Python :: 2.7'
     ],
     keywords='emoji cli',
     packages=['pyemojify'],
