@@ -25,7 +25,7 @@ Pyemojify also support pipeline, for example:
 This one is very useful for git commit messages, use the following one and you'll
 see you emoji friends again!
 
-    $ git log --oneline --color | emojify | less
+    $ git log --oneline --color | pyemojify | less
 
 ### API
 
