@@ -1,0 +1,4 @@
+2015.08.06 v0.1.0
+- first public release.
+- currently we only support python 2.
+- support cli and have a api interface.
