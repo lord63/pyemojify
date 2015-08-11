@@ -1,6 +1,7 @@
 # Pyemojify
 
 [![Latest Version][1]][2]
+[![Build Status][3]][4]
 
 Substitutes emoji aliases to emoji raw characters. Simple but sweet :smile:
 
@@ -47,3 +48,5 @@ MIT
 [mrowa44]: https://github.com/mrowa44
 [1]: http://img.shields.io/pypi/v/pyemojify.svg
 [2]: https://pypi.python.org/pypi/pyemojify
+[3]: https://travis-ci.org/lord63/pyemojify.svg
+[4]: https://travis-ci.org/lord63/pyemojify
