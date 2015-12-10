@@ -1,3 +1,8 @@
+2015.12.10 v0.2.0
+- new
+	- add python3.x support
+	- add wheel support
+
 2015.08.06 v0.1.0
 - first public release.
 - currently we only support python 2.

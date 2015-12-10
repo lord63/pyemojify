@@ -2,6 +2,7 @@
 
 [![Latest Version][1]][2]
 [![Build Status][3]][4]
+[![Python Versions][5]][2]
 
 Substitutes emoji aliases to emoji raw characters. Simple but sweet :smile:
 
@@ -32,7 +33,7 @@ see you emoji friends again!
 
     >>> from pyemojify import emojify
     >>> text = emojify("Life is short :smile: , use :sparkles: Python :sparkles:")
-    >>> print text
+    >>> print(text)
     Life is short 😄 , use ✨ Python ✨.
 
 ## Credits
@@ -50,3 +51,4 @@ MIT
 [2]: https://pypi.python.org/pypi/pyemojify
 [3]: https://travis-ci.org/lord63/pyemojify.svg
 [4]: https://travis-ci.org/lord63/pyemojify
+[5]: https://img.shields.io/pypi/pyversions/pyemojify.svg
